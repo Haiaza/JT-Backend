@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI);
 
 mongoose.connection.on('connected', () => {
-    console.log(`Connection established to ${mongoose.connection.name}`)
+    console.log(`Connection established to ${mongoose.connection.name} Backend`)
 });
 
 app.use(express.json());
